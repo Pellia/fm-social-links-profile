@@ -12,6 +12,12 @@
   /* Font */
   --font-inter: "Inter", sans-serif;
 
+  /* Typography */
+  --line-height: 150%;
+  --text-preset-1: 700 24px / var(--line-height) var(--font-inter);
+  --text-preset-2: 400 14px / var(--line-height) var(--font-inter);
+  --text-preset-2-bold: 700 14px / var(--line-height) var(--font-inter);
+
   /* Colors */
   --color-green: hsl(75, 94%, 57%);
   --color-gray-700: hsl(0, 0%, 20%);
@@ -22,7 +28,7 @@
 
 /* General */
 body {
-  font-family: var(--font-inter);
+  font: var(--text-preset-2);
   background-color: var(--color-gray-900);
   color: var(--color-white);
 }
@@ -41,6 +47,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   transition: opacity 0.3s ease;
+  color: var(--color-green);
 }
 
 .attribution a:hover {
