@@ -39,14 +39,79 @@ body {
   font: var(--text-preset-2);
   background-color: var(--color-gray-900);
   color: var(--color-white);
+  letter-spacing: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 4vh;
+  place-items: center;
+}
+
+/* Card */
+.card {
+  background-color: var(--color-gray-800);
+  margin: var(--space-300);
+  padding: var(--space-300);
+  border-radius: 12px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
+  text-align: center;
+}
+
+.card__avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.card__person-name {
+  font: var(--text-preset-1);
+  margin-bottom: var(--space-50);
+}
+
+.card__person-location {
+  color: var(--color-green);
+  font: var(--text-preset-2-bold);
+}
+
+.card__person-info {
+  font: var(--text-preset-2);
+}
+
+.card__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-200);
+}
+
+.card__list-item {
+  background-color: var(--color-gray-700);
+  border-radius: 8px;
+}
+
+.card__list-link {
+  font: var(--text-preset-2-bold);
+  color: var(--color-white);
+  display: block;
+  width: 100%;
+  padding: var(--space-150);
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.6s ease-out;
+}
+
+.card__list-link:hover {
+  background-color: var(--color-green);
+  color: var(--color-gray-700);
 }
 
 /* Footer Attribution */
 .attribution {
-  position: fixed;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 0.75rem;
   text-align: center;
 }
@@ -61,4 +126,12 @@ body {
 .attribution a:hover {
   opacity: 0.8;
   text-decoration: underline;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  .card {
+    margin: var(--space-500);
+    padding: var(--space-500);
+  }
 }
