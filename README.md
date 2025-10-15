@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages]((https://pellia.github.io/fm-social-links-profile/))
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/social-links-profile-YKuBHPAZBT)
+- Live Site URL: [GitHub Pages](https://pellia.github.io/fm-social-links-profile/)
 
 ## My process
 
